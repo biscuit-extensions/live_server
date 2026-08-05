@@ -1,7 +1,19 @@
 [extension]
 id = "live_server"
 name = "Live Server"
-version = "0.1.0"
+version = "0.2.0"
 description = "Local development server with live reload for static and dynamic web pages"
-author = "biscuit-extensions"
+author = "tomlin7"
 icon = "icon.png"
+
+[dependencies]
+python = []
+tools = []
+
+[contributes]
+commands = [
+    { id = "live_server.start", title = "Live Server: Start Server" },
+    { id = "live_server.stop", title = "Live Server: Stop Server" },
+    { id = "live_server.open_browser", title = "Live Server: Open in Browser" },
+    { id = "live_server.reload", title = "Live Server: Trigger Reload" }
+]

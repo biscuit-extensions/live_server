@@ -8,6 +8,9 @@ if typing.TYPE_CHECKING:
     from biscuit.api import ExtensionsAPI
 
 
-def setup(api: ExtensionsAPI) -> None:
+def setup(api: ExtensionsAPI) -> LiveServer:
     """Entrypoint for Biscuit to load the extension."""
-    api.register("live_server", LiveServer(api))
+    ext = LiveServer(api)
+    api.register("live_server", ext)
+    ext.install()
+    return ext
