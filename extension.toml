@@ -1,0 +1,7 @@
+[extension]
+id = "live_server"
+name = "Live Server"
+version = "0.1.0"
+description = "Local development server with live reload for static and dynamic web pages"
+author = "biscuit-extensions"
+icon = "icon.png"
